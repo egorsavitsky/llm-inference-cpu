@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-10-27T08:08:20.377239+00:00",
+  "image_id": "sha256:5cff15a88c6dd5e9d80574a9b3fb5e4f2a88d19067fd502da0d3ecb78c64fae7",
+  "network_mode": "none",
+  "user": "10001:10001",
+  "dependency_lock": {
+    "event": "dependency_lock_verified",
+    "packages": 155
+  },
+  "log_boundary": {
+    "raw_output_and_traceback_hidden": true,
+    "safe_error_event_preserved": true,
+    "sigterm_forwarded": true,
+    "uid": 10001
+  },
+  "statuses": {
+    "no_key": 401,
+    "wrong_key": 401,
+    "models": 200,
+    "unknown_path": 404,
+    "invalid_json": 400,
+    "invalid_messages": 400,
+    "unknown_model": 404,
+    "completion": 200,
+    "stream": 200
+  },
+  "completion_tokens": 10,
+  "stream_tokens": 8,
+  "finished_events": 10,
+  "probe_strings_absent": true,
+  "graceful_stop_events": true,
+  "scope": "Real CPU API error/success paths plus synthetic native-output/traceback and shutdown checks. Kubernetes and load testing remain."
+}

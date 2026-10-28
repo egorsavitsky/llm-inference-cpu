@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "handlers": {
+    "safe": {"class": "service.events.SafeEventHandler", "level": "INFO"}
+  },
+  "loggers": {
+    "vllm": {"handlers": ["safe"], "level": "INFO", "propagate": false},
+    "uvicorn": {"handlers": ["safe"], "level": "INFO", "propagate": false},
+    "uvicorn.error": {"handlers": ["safe"], "level": "INFO", "propagate": false},
+    "uvicorn.access": {"handlers": [], "level": "CRITICAL", "propagate": false}
+  },
+  "root": {"handlers": ["safe"], "level": "WARNING"}
+}

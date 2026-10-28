@@ -1,0 +1,361 @@
+{
+  "controlled_config_difference": [
+    "max_num_seqs"
+  ],
+  "different_pod_uids": true,
+  "same_server_image_and_resources": true,
+  "same_request_ids_input_counts_output_counts": true,
+  "successful_measured_requests": 96,
+  "cases": [
+    {
+      "workload": "short",
+      "concurrency": 1,
+      "max_num_seqs_1": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 44.3212471730003,
+        "requests_per_second": 0.180500335849607,
+        "output_tokens_per_second": 5.776010747187424,
+        "input_tokens_per_second": 11.506896410412446,
+        "ttft_seconds": {
+          "min": 0.451335108999956,
+          "median": 0.46220483749993946,
+          "p95_nearest_rank": 0.6079672179998852,
+          "max": 0.6079672179998852
+        },
+        "latency_seconds": {
+          "min": 5.3033981069997935,
+          "median": 5.373382333500103,
+          "p95_nearest_rank": 6.323830712000017,
+          "max": 6.323830712000017
+        },
+        "prompt_tokens": {
+          "min": 62,
+          "median": 64.0,
+          "p95_nearest_rank": 65,
+          "max": 65
+        }
+      },
+      "max_num_seqs_2": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 64.59595195800011,
+        "requests_per_second": 0.12384676992145809,
+        "output_tokens_per_second": 3.9630966374866587,
+        "input_tokens_per_second": 7.895231582492953,
+        "ttft_seconds": {
+          "min": 0.5558732200006489,
+          "median": 0.6687054115000137,
+          "p95_nearest_rank": 0.8040093399995385,
+          "max": 0.8040093399995385
+        },
+        "latency_seconds": {
+          "min": 7.330066491000252,
+          "median": 8.072302905499782,
+          "p95_nearest_rank": 8.932938157000535,
+          "max": 8.932938157000535
+        },
+        "prompt_tokens": {
+          "min": 62,
+          "median": 64.0,
+          "p95_nearest_rank": 65,
+          "max": 65
+        }
+      }
+    },
+    {
+      "workload": "short",
+      "concurrency": 2,
+      "max_num_seqs_1": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 45.17363118399999,
+        "requests_per_second": 0.1770944639675881,
+        "output_tokens_per_second": 5.667022846962819,
+        "input_tokens_per_second": 11.31190888592969,
+        "ttft_seconds": {
+          "min": 0.5092272900001262,
+          "median": 5.788958722000189,
+          "p95_nearest_rank": 7.206970256999739,
+          "max": 7.206970256999739
+        },
+        "latency_seconds": {
+          "min": 6.797155215000203,
+          "median": 10.690769133499998,
+          "p95_nearest_rank": 12.15448900299998,
+          "max": 12.15448900299998
+        },
+        "prompt_tokens": {
+          "min": 62,
+          "median": 64.0,
+          "p95_nearest_rank": 65,
+          "max": 65
+        }
+      },
+      "max_num_seqs_2": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 44.358195055999204,
+        "requests_per_second": 0.1803499892162101,
+        "output_tokens_per_second": 5.771199654918723,
+        "input_tokens_per_second": 11.51985556118542,
+        "ttft_seconds": {
+          "min": 0.576867673000379,
+          "median": 1.1252973810005642,
+          "p95_nearest_rank": 2.992013498000233,
+          "max": 2.992013498000233
+        },
+        "latency_seconds": {
+          "min": 9.603738845999942,
+          "median": 10.640765051000017,
+          "p95_nearest_rank": 12.801422288999674,
+          "max": 12.801422288999674
+        },
+        "prompt_tokens": {
+          "min": 62,
+          "median": 64.0,
+          "p95_nearest_rank": 65,
+          "max": 65
+        }
+      }
+    },
+    {
+      "workload": "short",
+      "concurrency": 4,
+      "max_num_seqs_1": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 44.40163936800036,
+        "requests_per_second": 0.18017352768658104,
+        "output_tokens_per_second": 5.765552885970593,
+        "input_tokens_per_second": 11.260845480411316,
+        "ttft_seconds": {
+          "min": 0.5103280110001833,
+          "median": 16.619247150500087,
+          "p95_nearest_rank": 17.717082178000055,
+          "max": 17.717082178000055
+        },
+        "latency_seconds": {
+          "min": 5.387074321,
+          "median": 22.02215764200014,
+          "p95_nearest_rank": 22.598908990000382,
+          "max": 22.598908990000382
+        },
+        "prompt_tokens": {
+          "min": 60,
+          "median": 62.5,
+          "p95_nearest_rank": 65,
+          "max": 65
+        }
+      },
+      "max_num_seqs_2": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 45.626709205000225,
+        "requests_per_second": 0.17533589731523486,
+        "output_tokens_per_second": 5.610748714087515,
+        "input_tokens_per_second": 10.958493582202179,
+        "ttft_seconds": {
+          "min": 0.9192846189998818,
+          "median": 11.78634302599994,
+          "p95_nearest_rank": 14.82707861400013,
+          "max": 14.82707861400013
+        },
+        "latency_seconds": {
+          "min": 13.206986504999804,
+          "median": 21.01676567100003,
+          "p95_nearest_rank": 25.82810667600006,
+          "max": 25.82810667600006
+        },
+        "prompt_tokens": {
+          "min": 60,
+          "median": 62.5,
+          "p95_nearest_rank": 65,
+          "max": 65
+        }
+      }
+    },
+    {
+      "workload": "long",
+      "concurrency": 1,
+      "max_num_seqs_1": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 67.50091662400018,
+        "requests_per_second": 0.11851690910454352,
+        "output_tokens_per_second": 3.7925410913453925,
+        "input_tokens_per_second": 70.14719557625169,
+        "ttft_seconds": {
+          "min": 3.3468326610000076,
+          "median": 3.352763531000164,
+          "p95_nearest_rank": 3.388147346999631,
+          "max": 3.388147346999631
+        },
+        "latency_seconds": {
+          "min": 8.249572450000414,
+          "median": 8.335531670000137,
+          "p95_nearest_rank": 8.83899215800011,
+          "max": 8.83899215800011
+        },
+        "prompt_tokens": {
+          "min": 590,
+          "median": 592.0,
+          "p95_nearest_rank": 593,
+          "max": 593
+        }
+      },
+      "max_num_seqs_2": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 91.1988421269998,
+        "requests_per_second": 0.08772041194184817,
+        "output_tokens_per_second": 2.8070531821391413,
+        "input_tokens_per_second": 51.919518818081386,
+        "ttft_seconds": {
+          "min": 3.9929689419996066,
+          "median": 4.099363095000172,
+          "p95_nearest_rank": 4.370778137000343,
+          "max": 4.370778137000343
+        },
+        "latency_seconds": {
+          "min": 10.832423243999983,
+          "median": 11.212394691499867,
+          "p95_nearest_rank": 12.386185075000867,
+          "max": 12.386185075000867
+        },
+        "prompt_tokens": {
+          "min": 590,
+          "median": 592.0,
+          "p95_nearest_rank": 593,
+          "max": 593
+        }
+      }
+    },
+    {
+      "workload": "long",
+      "concurrency": 2,
+      "max_num_seqs_1": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 67.39935568100009,
+        "requests_per_second": 0.11869549670272596,
+        "output_tokens_per_second": 3.7982558944872307,
+        "input_tokens_per_second": 70.20838629966241,
+        "ttft_seconds": {
+          "min": 3.421919366000111,
+          "median": 11.714019300000245,
+          "p95_nearest_rank": 12.122463874999994,
+          "max": 12.122463874999994
+        },
+        "latency_seconds": {
+          "min": 8.367610081999828,
+          "median": 16.709936559000198,
+          "p95_nearest_rank": 17.08230611099998,
+          "max": 17.08230611099998
+        },
+        "prompt_tokens": {
+          "min": 590,
+          "median": 591.5,
+          "p95_nearest_rank": 593,
+          "max": 593
+        }
+      },
+      "max_num_seqs_2": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 76.32311685200057,
+        "requests_per_second": 0.10481752226540923,
+        "output_tokens_per_second": 3.3541607124930954,
+        "input_tokens_per_second": 61.99956441998956,
+        "ttft_seconds": {
+          "min": 4.300167227000202,
+          "median": 7.022161727999446,
+          "p95_nearest_rank": 9.528156764999949,
+          "max": 9.528156764999949
+        },
+        "latency_seconds": {
+          "min": 18.003905616999873,
+          "median": 18.197277597000266,
+          "p95_nearest_rank": 21.45793002100072,
+          "max": 21.45793002100072
+        },
+        "prompt_tokens": {
+          "min": 590,
+          "median": 591.5,
+          "p95_nearest_rank": 593,
+          "max": 593
+        }
+      }
+    },
+    {
+      "workload": "long",
+      "concurrency": 4,
+      "max_num_seqs_1": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 67.37844503099996,
+        "requests_per_second": 0.11873233340899012,
+        "output_tokens_per_second": 3.7994346690876837,
+        "input_tokens_per_second": 70.2004921280654,
+        "ttft_seconds": {
+          "min": 3.365553079000165,
+          "median": 28.553778130999945,
+          "p95_nearest_rank": 29.035785276000297,
+          "max": 29.035785276000297
+        },
+        "latency_seconds": {
+          "min": 8.413225872000112,
+          "median": 33.51283840399992,
+          "p95_nearest_rank": 33.98993511500021,
+          "max": 33.98993511500021
+        },
+        "prompt_tokens": {
+          "min": 590,
+          "median": 591.0,
+          "p95_nearest_rank": 593,
+          "max": 593
+        }
+      },
+      "max_num_seqs_2": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 74.97420939200038,
+        "requests_per_second": 0.10670335926014562,
+        "output_tokens_per_second": 3.41450749632466,
+        "input_tokens_per_second": 63.0883611625611,
+        "ttft_seconds": {
+          "min": 4.2175675939997745,
+          "median": 23.464219386499735,
+          "p95_nearest_rank": 27.31259051000052,
+          "max": 27.31259051000052
+        },
+        "latency_seconds": {
+          "min": 19.55174964300022,
+          "median": 37.187859620499694,
+          "p95_nearest_rank": 41.34388146800029,
+          "max": 41.34388146800029
+        },
+        "prompt_tokens": {
+          "min": 590,
+          "median": 591.0,
+          "p95_nearest_rank": 593,
+          "max": 593
+        }
+      }
+    }
+  ],
+  "retained_default_max_num_seqs": 2,
+  "scope": "One descriptive run per configuration on a shared laptop. Different one-client controls prevent a robust claim of a universal throughput winner. Preliminary warm-prefix run excluded."
+}

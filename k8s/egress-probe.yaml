@@ -1,0 +1,56 @@
+# Local destination used to verify that the CNI really blocks outgoing TCP.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: egress-probe
+  namespace: ml-inference
+  labels:
+    app: egress-probe
+spec:
+  automountServiceAccountToken: false
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 10001
+    runAsGroup: 10001
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+    - name: http
+      image: ml-model-downloader:0.1
+      imagePullPolicy: Never
+      env:
+        - name: VLLM_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: api-credentials
+              key: token
+      command: [python, -m, http.server, "8080", --bind, 0.0.0.0, --directory, /app]
+      ports:
+        - containerPort: 8080
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        capabilities:
+          drop: [ALL]
+      resources:
+        requests:
+          cpu: 10m
+          memory: 16Mi
+        limits:
+          cpu: 100m
+          memory: 64Mi
+      readinessProbe:
+        tcpSocket:
+          port: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: egress-probe
+  namespace: ml-inference
+spec:
+  selector:
+    app: egress-probe
+  ports:
+    - port: 8080
+      targetPort: 8080

@@ -1,0 +1,56 @@
+{
+  "checked_at_utc": "2026-10-28T09:10:35.055503+00:00",
+  "pod_uid": "f6dc9f22-d19c-42a7-8825-0fc137debb55",
+  "temporary_pvc_uid": "abe92b3d-b1f2-41a8-93eb-4dda4fa8d934",
+  "initial_model_directory_empty": true,
+  "init_events": [
+    {
+      "event": "fresh_model_directory_empty"
+    },
+    {
+      "event": "model_file_ready",
+      "file": "config.json"
+    },
+    {
+      "event": "model_file_ready",
+      "file": "generation_config.json"
+    },
+    {
+      "event": "model_file_ready",
+      "file": "merges.txt"
+    },
+    {
+      "event": "model_file_ready",
+      "file": "model.safetensors"
+    },
+    {
+      "event": "model_file_ready",
+      "file": "tokenizer.json"
+    },
+    {
+      "event": "model_file_ready",
+      "file": "tokenizer_config.json"
+    },
+    {
+      "event": "model_file_ready",
+      "file": "vocab.json"
+    },
+    {
+      "event": "model_file_ready",
+      "file": "LICENSE"
+    },
+    {
+      "event": "model_download_complete",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+    }
+  ],
+  "verification": {
+    "event": "fresh_files_verified",
+    "uid": 10001,
+    "files": 8,
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "all_sizes_and_sha256_match": true
+  },
+  "serving_pvc_modified": false,
+  "scope": "Fresh initContainer HTTPS download into an isolated PVC and independent SHA-256 verification; vLLM startup/restart proven separately."
+}

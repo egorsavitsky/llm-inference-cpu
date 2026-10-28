@@ -1,0 +1,13 @@
+{
+  "client_script": "scripts/ask.py",
+  "exit_code": 0,
+  "nonempty_answer": true,
+  "usage": {
+    "prompt_tokens": 40,
+    "total_tokens": 48,
+    "completion_tokens": 8,
+    "prompt_tokens_details": null
+  },
+  "credentials_stayed_in_client_pod": true,
+  "scope": "Real single-question CLI through the Kubernetes Service; answer text deliberately omitted."
+}

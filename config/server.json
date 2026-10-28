@@ -1,0 +1,10 @@
+{
+  "model_path": "/models/qwen-0.5b",
+  "served_name": "learning-model",
+  "host": "0.0.0.0",
+  "port": 8000,
+  "dtype": "float32",
+  "max_model_len": 1024,
+  "max_num_seqs": 2,
+  "max_num_batched_tokens": 1024
+}

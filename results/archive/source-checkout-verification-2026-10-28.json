@@ -1,0 +1,13 @@
+{
+  "files_copied": 89,
+  "private_directory_mode": "0700",
+  "minikube_user_cannot_read_checkout": true,
+  "fresh_source_tests": {
+    "status": "passed",
+    "count": 60
+  },
+  "server_side_kustomize_validation": "passed",
+  "release_check_from_private_checkout": "passed",
+  "external_network_required": false,
+  "scope": "Separate copy of final source; current Minikube/runtime reused. This does not claim a second clean installation of downloaded system tools/images."
+}

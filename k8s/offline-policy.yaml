@@ -1,0 +1,12 @@
+# Apply after the first successful model download, then recreate the Pod.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: model-offline
+  namespace: ml-inference
+spec:
+  podSelector:
+    matchLabels:
+      app: cpu-llm
+  policyTypes: [Egress]
+  egress: []

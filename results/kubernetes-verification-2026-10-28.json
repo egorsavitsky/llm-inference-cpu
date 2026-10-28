@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-10-28T08:44:19.408526+00:00",
+  "node_versions": [
+    "v1.37.0"
+  ],
+  "first_pod_uid": "2ef173e9-61b8-4ca2-83e7-4dbfc7410c48",
+  "recreated_pod_uid": "505c13b9-8ba5-4e5a-b98b-87ffb9ab79c8",
+  "pvc_uid": "fa5e26da-719a-42fe-8797-ab8a3ac9f6cc",
+  "same_pvc": true,
+  "first_fresh_download_verified": false,
+  "first_init_events": [
+    {
+      "event": "model_cache_verified",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+    }
+  ],
+  "all_eight_files_downloaded_this_run": false,
+  "restart_init_events": [
+    {
+      "event": "model_cache_verified",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+    }
+  ],
+  "uid": 10001,
+  "egress_control_before_policy": "reachable",
+  "egress_control_after_policy": "blocked",
+  "egress_after_recreation": "blocked",
+  "first_answer": {
+    "http_status": 200,
+    "unauthorized_statuses": [
+      401,
+      401
+    ],
+    "usage": {
+      "prompt_tokens": 36,
+      "total_tokens": 44,
+      "completion_tokens": 8,
+      "prompt_tokens_details": null
+    },
+    "nonempty_answer": true
+  },
+  "offline_answer": {
+    "http_status": 200,
+    "unauthorized_statuses": [
+      401,
+      401
+    ],
+    "usage": {
+      "prompt_tokens": 36,
+      "total_tokens": 44,
+      "completion_tokens": 8,
+      "prompt_tokens_details": null
+    },
+    "nonempty_answer": true
+  },
+  "secret_references": {
+    "api": "api-credentials",
+    "hf": "hf-credentials"
+  },
+  "hf_token_required_for_public_model": false,
+  "scope": "Real Service requests, non-root init/server, same-PVC recreation, and enforced egress denial. Load testing remains."
+}

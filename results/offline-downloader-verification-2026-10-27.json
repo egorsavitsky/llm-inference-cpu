@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-27T18:06:23.633075+00:00",
+  "uid": 10001,
+  "image_id": "sha256:c94623ca1624aacbf7975b985520510869efaaaba5de31e8e9a71fb08e696432",
+  "image_bytes": 185321754,
+  "server_image_bytes": 7460517214,
+  "network_mode": "none",
+  "read_only_root": true,
+  "memory_limit_bytes": 268435456,
+  "events": [
+    {
+      "event": "model_cache_verified",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+    }
+  ],
+  "scope": "Real pinned model-file hashes in a non-root, network-disabled downloader container. Fresh online download is checked during Kubernetes setup."
+}

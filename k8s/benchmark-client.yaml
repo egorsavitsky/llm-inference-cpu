@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: benchmark-client
+  namespace: ml-inference
+  labels:
+    app: benchmark-client
+spec:
+  automountServiceAccountToken: false
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 10001
+    runAsGroup: 10001
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+    - name: client
+      image: ml-model-downloader:0.1
+      imagePullPolicy: Never
+      command: [python, -c, "import time; time.sleep(86400)"]
+      env:
+        - name: VLLM_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: api-credentials
+              key: token
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        capabilities:
+          drop: [ALL]
+      resources:
+        requests:
+          cpu: 100m
+          memory: 64Mi
+        limits:
+          cpu: "1"
+          memory: 256Mi

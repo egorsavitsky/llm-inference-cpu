@@ -1,0 +1,9 @@
+**
+!Dockerfile
+!requirements.txt
+!service/
+!service/*.py
+!config/
+!config/*.json
+!scripts/
+!scripts/check_environment.py

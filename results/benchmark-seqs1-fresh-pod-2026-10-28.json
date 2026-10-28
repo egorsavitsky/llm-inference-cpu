@@ -1,0 +1,763 @@
+{
+  "checked_at_utc": "2026-10-28T09:28:45.231610+00:00",
+  "max_output_tokens": 32,
+  "warmups_excluded": [
+    {
+      "request_id": "warmup/short",
+      "ok": true,
+      "ttft_seconds": 0.513441710999814,
+      "latency_seconds": 5.41691561000016,
+      "prompt_tokens": 64,
+      "output_tokens": 32,
+      "finish_reason": "length"
+    },
+    {
+      "request_id": "warmup/long",
+      "ok": true,
+      "ttft_seconds": 3.493562693000058,
+      "latency_seconds": 10.391068734999862,
+      "prompt_tokens": 593,
+      "output_tokens": 32,
+      "finish_reason": "length"
+    }
+  ],
+  "cases": [
+    {
+      "workload": "short",
+      "concurrency": 1,
+      "summary": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 44.3212471730003,
+        "requests_per_second": 0.180500335849607,
+        "output_tokens_per_second": 5.776010747187424,
+        "input_tokens_per_second": 11.506896410412446,
+        "ttft_seconds": {
+          "min": 0.451335108999956,
+          "median": 0.46220483749993946,
+          "p95_nearest_rank": 0.6079672179998852,
+          "max": 0.6079672179998852
+        },
+        "latency_seconds": {
+          "min": 5.3033981069997935,
+          "median": 5.373382333500103,
+          "p95_nearest_rank": 6.323830712000017,
+          "max": 6.323830712000017
+        },
+        "prompt_tokens": {
+          "min": 62,
+          "median": 64.0,
+          "p95_nearest_rank": 65,
+          "max": 65
+        }
+      },
+      "requests": [
+        {
+          "request_id": "cpu-benchmark-v1/short/1/0",
+          "ok": true,
+          "ttft_seconds": 0.6079672179998852,
+          "latency_seconds": 6.323830712000017,
+          "prompt_tokens": 65,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/1/1",
+          "ok": true,
+          "ttft_seconds": 0.46184451899989654,
+          "latency_seconds": 5.442065639999782,
+          "prompt_tokens": 64,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/1/2",
+          "ok": true,
+          "ttft_seconds": 0.45783005799967214,
+          "latency_seconds": 5.38155234199985,
+          "prompt_tokens": 63,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/1/3",
+          "ok": true,
+          "ttft_seconds": 0.4632908280000265,
+          "latency_seconds": 5.361637365999741,
+          "prompt_tokens": 64,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/1/4",
+          "ok": true,
+          "ttft_seconds": 0.4585878910002066,
+          "latency_seconds": 5.348587616000259,
+          "prompt_tokens": 64,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/1/5",
+          "ok": true,
+          "ttft_seconds": 0.4625651559999824,
+          "latency_seconds": 5.380852337000306,
+          "prompt_tokens": 63,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/1/6",
+          "ok": true,
+          "ttft_seconds": 0.4639762089996111,
+          "latency_seconds": 5.3033981069997935,
+          "prompt_tokens": 65,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/1/7",
+          "ok": true,
+          "ttft_seconds": 0.451335108999956,
+          "latency_seconds": 5.365912329999901,
+          "prompt_tokens": 62,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        }
+      ]
+    },
+    {
+      "workload": "long",
+      "concurrency": 1,
+      "summary": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 67.50091662400018,
+        "requests_per_second": 0.11851690910454352,
+        "output_tokens_per_second": 3.7925410913453925,
+        "input_tokens_per_second": 70.14719557625169,
+        "ttft_seconds": {
+          "min": 3.3468326610000076,
+          "median": 3.352763531000164,
+          "p95_nearest_rank": 3.388147346999631,
+          "max": 3.388147346999631
+        },
+        "latency_seconds": {
+          "min": 8.249572450000414,
+          "median": 8.335531670000137,
+          "p95_nearest_rank": 8.83899215800011,
+          "max": 8.83899215800011
+        },
+        "prompt_tokens": {
+          "min": 590,
+          "median": 592.0,
+          "p95_nearest_rank": 593,
+          "max": 593
+        }
+      },
+      "requests": [
+        {
+          "request_id": "cpu-benchmark-v1/long/1/0",
+          "ok": true,
+          "ttft_seconds": 3.351526586000091,
+          "latency_seconds": 8.324787590000142,
+          "prompt_tokens": 592,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/1/1",
+          "ok": true,
+          "ttft_seconds": 3.3489786449999883,
+          "latency_seconds": 8.83899215800011,
+          "prompt_tokens": 590,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/1/2",
+          "ok": true,
+          "ttft_seconds": 3.3468326610000076,
+          "latency_seconds": 8.346810030000142,
+          "prompt_tokens": 592,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/1/3",
+          "ok": true,
+          "ttft_seconds": 3.358807632999742,
+          "latency_seconds": 8.299682956999732,
+          "prompt_tokens": 592,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/1/4",
+          "ok": true,
+          "ttft_seconds": 3.352934471000026,
+          "latency_seconds": 8.317558476000158,
+          "prompt_tokens": 593,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/1/5",
+          "ok": true,
+          "ttft_seconds": 3.3545803609999894,
+          "latency_seconds": 8.346275750000132,
+          "prompt_tokens": 592,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/1/6",
+          "ok": true,
+          "ttft_seconds": 3.388147346999631,
+          "latency_seconds": 8.37317730399991,
+          "prompt_tokens": 592,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/1/7",
+          "ok": true,
+          "ttft_seconds": 3.3525925910003025,
+          "latency_seconds": 8.249572450000414,
+          "prompt_tokens": 592,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        }
+      ]
+    },
+    {
+      "workload": "long",
+      "concurrency": 2,
+      "summary": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 67.39935568100009,
+        "requests_per_second": 0.11869549670272596,
+        "output_tokens_per_second": 3.7982558944872307,
+        "input_tokens_per_second": 70.20838629966241,
+        "ttft_seconds": {
+          "min": 3.421919366000111,
+          "median": 11.714019300000245,
+          "p95_nearest_rank": 12.122463874999994,
+          "max": 12.122463874999994
+        },
+        "latency_seconds": {
+          "min": 8.367610081999828,
+          "median": 16.709936559000198,
+          "p95_nearest_rank": 17.08230611099998,
+          "max": 17.08230611099998
+        },
+        "prompt_tokens": {
+          "min": 590,
+          "median": 591.5,
+          "p95_nearest_rank": 593,
+          "max": 593
+        }
+      },
+      "requests": [
+        {
+          "request_id": "cpu-benchmark-v1/long/2/0",
+          "ok": true,
+          "ttft_seconds": 3.421919366000111,
+          "latency_seconds": 8.367610081999828,
+          "prompt_tokens": 593,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/2/1",
+          "ok": true,
+          "ttft_seconds": 12.122463874999994,
+          "latency_seconds": 17.08230611099998,
+          "prompt_tokens": 592,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/2/2",
+          "ok": true,
+          "ttft_seconds": 12.102741162000257,
+          "latency_seconds": 17.05872582200027,
+          "prompt_tokens": 592,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/2/3",
+          "ok": true,
+          "ttft_seconds": 11.733591005000108,
+          "latency_seconds": 16.753663768000024,
+          "prompt_tokens": 593,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/2/4",
+          "ok": true,
+          "ttft_seconds": 11.75487572799966,
+          "latency_seconds": 16.758007863999865,
+          "prompt_tokens": 591,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/2/5",
+          "ok": true,
+          "ttft_seconds": 11.67176797600041,
+          "latency_seconds": 16.666209350000372,
+          "prompt_tokens": 591,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/2/6",
+          "ok": true,
+          "ttft_seconds": 11.694447595000383,
+          "latency_seconds": 16.631234531000246,
+          "prompt_tokens": 590,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/2/7",
+          "ok": true,
+          "ttft_seconds": 11.631341872000121,
+          "latency_seconds": 16.597108371000104,
+          "prompt_tokens": 590,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        }
+      ]
+    },
+    {
+      "workload": "short",
+      "concurrency": 2,
+      "summary": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 45.17363118399999,
+        "requests_per_second": 0.1770944639675881,
+        "output_tokens_per_second": 5.667022846962819,
+        "input_tokens_per_second": 11.31190888592969,
+        "ttft_seconds": {
+          "min": 0.5092272900001262,
+          "median": 5.788958722000189,
+          "p95_nearest_rank": 7.206970256999739,
+          "max": 7.206970256999739
+        },
+        "latency_seconds": {
+          "min": 6.797155215000203,
+          "median": 10.690769133499998,
+          "p95_nearest_rank": 12.15448900299998,
+          "max": 12.15448900299998
+        },
+        "prompt_tokens": {
+          "min": 62,
+          "median": 64.0,
+          "p95_nearest_rank": 65,
+          "max": 65
+        }
+      },
+      "requests": [
+        {
+          "request_id": "cpu-benchmark-v1/short/2/0",
+          "ok": true,
+          "ttft_seconds": 0.5092272900001262,
+          "latency_seconds": 6.797155215000203,
+          "prompt_tokens": 62,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/2/1",
+          "ok": true,
+          "ttft_seconds": 7.206970256999739,
+          "latency_seconds": 12.15448900299998,
+          "prompt_tokens": 64,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/2/2",
+          "ok": true,
+          "ttft_seconds": 5.802384822000022,
+          "latency_seconds": 11.436470866000036,
+          "prompt_tokens": 65,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/2/3",
+          "ok": true,
+          "ttft_seconds": 6.513722097000027,
+          "latency_seconds": 11.46554054399985,
+          "prompt_tokens": 64,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/2/4",
+          "ok": true,
+          "ttft_seconds": 5.8326566520004235,
+          "latency_seconds": 10.71796355000015,
+          "prompt_tokens": 64,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/2/5",
+          "ok": true,
+          "ttft_seconds": 5.747668580999743,
+          "latency_seconds": 10.663574716999847,
+          "prompt_tokens": 65,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/2/6",
+          "ok": true,
+          "ttft_seconds": 5.775532622000355,
+          "latency_seconds": 10.639761746000204,
+          "prompt_tokens": 63,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/2/7",
+          "ok": true,
+          "ttft_seconds": 5.704431809999733,
+          "latency_seconds": 10.588295719999678,
+          "prompt_tokens": 64,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        }
+      ]
+    },
+    {
+      "workload": "short",
+      "concurrency": 4,
+      "summary": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 44.40163936800036,
+        "requests_per_second": 0.18017352768658104,
+        "output_tokens_per_second": 5.765552885970593,
+        "input_tokens_per_second": 11.260845480411316,
+        "ttft_seconds": {
+          "min": 0.5103280110001833,
+          "median": 16.619247150500087,
+          "p95_nearest_rank": 17.717082178000055,
+          "max": 17.717082178000055
+        },
+        "latency_seconds": {
+          "min": 5.387074321,
+          "median": 22.02215764200014,
+          "p95_nearest_rank": 22.598908990000382,
+          "max": 22.598908990000382
+        },
+        "prompt_tokens": {
+          "min": 60,
+          "median": 62.5,
+          "p95_nearest_rank": 65,
+          "max": 65
+        }
+      },
+      "requests": [
+        {
+          "request_id": "cpu-benchmark-v1/short/4/0",
+          "ok": true,
+          "ttft_seconds": 11.092148458000338,
+          "latency_seconds": 16.126319785000305,
+          "prompt_tokens": 62,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/4/1",
+          "ok": true,
+          "ttft_seconds": 5.759192641000027,
+          "latency_seconds": 10.654014154999913,
+          "prompt_tokens": 64,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/4/2",
+          "ok": true,
+          "ttft_seconds": 16.660799399000098,
+          "latency_seconds": 22.59759222899993,
+          "prompt_tokens": 60,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/4/3",
+          "ok": true,
+          "ttft_seconds": 0.5103280110001833,
+          "latency_seconds": 5.387074321,
+          "prompt_tokens": 61,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/4/4",
+          "ok": true,
+          "ttft_seconds": 17.70779781300007,
+          "latency_seconds": 22.598908990000382,
+          "prompt_tokens": 62,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/4/5",
+          "ok": true,
+          "ttft_seconds": 17.717082178000055,
+          "latency_seconds": 22.588391434000187,
+          "prompt_tokens": 63,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/4/6",
+          "ok": true,
+          "ttft_seconds": 17.571511306000048,
+          "latency_seconds": 22.56647694200001,
+          "prompt_tokens": 63,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/short/4/7",
+          "ok": true,
+          "ttft_seconds": 16.577694902000076,
+          "latency_seconds": 21.47783834200027,
+          "prompt_tokens": 65,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        }
+      ]
+    },
+    {
+      "workload": "long",
+      "concurrency": 4,
+      "summary": {
+        "requests": 8,
+        "successful": 8,
+        "errors": 0,
+        "wall_seconds": 67.37844503099996,
+        "requests_per_second": 0.11873233340899012,
+        "output_tokens_per_second": 3.7994346690876837,
+        "input_tokens_per_second": 70.2004921280654,
+        "ttft_seconds": {
+          "min": 3.365553079000165,
+          "median": 28.553778130999945,
+          "p95_nearest_rank": 29.035785276000297,
+          "max": 29.035785276000297
+        },
+        "latency_seconds": {
+          "min": 8.413225872000112,
+          "median": 33.51283840399992,
+          "p95_nearest_rank": 33.98993511500021,
+          "max": 33.98993511500021
+        },
+        "prompt_tokens": {
+          "min": 590,
+          "median": 591.0,
+          "p95_nearest_rank": 593,
+          "max": 593
+        }
+      },
+      "requests": [
+        {
+          "request_id": "cpu-benchmark-v1/long/4/0",
+          "ok": true,
+          "ttft_seconds": 3.365553079000165,
+          "latency_seconds": 8.413225872000112,
+          "prompt_tokens": 591,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/4/1",
+          "ok": true,
+          "ttft_seconds": 11.705519599000127,
+          "latency_seconds": 16.689267052000105,
+          "prompt_tokens": 592,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/4/2",
+          "ok": true,
+          "ttft_seconds": 28.71005074699997,
+          "latency_seconds": 33.66613439699995,
+          "prompt_tokens": 591,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/4/3",
+          "ok": true,
+          "ttft_seconds": 19.962737783000193,
+          "latency_seconds": 25.043422022000414,
+          "prompt_tokens": 591,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/4/4",
+          "ok": true,
+          "ttft_seconds": 29.035785276000297,
+          "latency_seconds": 33.98993511500021,
+          "prompt_tokens": 590,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/4/5",
+          "ok": true,
+          "ttft_seconds": 28.976453493000008,
+          "latency_seconds": 33.892194538999775,
+          "prompt_tokens": 591,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/4/6",
+          "ok": true,
+          "ttft_seconds": 28.813676520000172,
+          "latency_seconds": 33.74653129900025,
+          "prompt_tokens": 591,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        },
+        {
+          "request_id": "cpu-benchmark-v1/long/4/7",
+          "ok": true,
+          "ttft_seconds": 28.39750551499992,
+          "latency_seconds": 33.35954241099989,
+          "prompt_tokens": 593,
+          "output_tokens": 32,
+          "finish_reason": "length"
+        }
+      ]
+    }
+  ],
+  "method": {
+    "load": "Closed loop: up to C worker threads, each immediately sends its next request; no client think time. Worker queue time excluded from per-request latency, included in case wall time.",
+    "ttft": "Client time before HTTP call to first nonempty content delta, a first-text-chunk proxy for TTFT; role-only chunks excluded.",
+    "latency": "Client time to SSE [DONE]; server startup and tokenizer calls excluded.",
+    "throughput": "Sum of actual output tokens divided by full case wall time, including all workers and drain; input tokens reported separately.",
+    "tokens": "Inputs counted with the serving tokenizer/chat template, checked against usage. ignore_eos fixes output to 32 tokens. SSE chunks are not counted as tokens.",
+    "cache": "Early unique deterministic IDs vary across measured cases and warmups. Long prompt cache reuse reduced, not fully isolated; runtime defaults retained.",
+    "limits": "Small sample, one laptop and one run per configuration; p95 is nearest rank of this sample, not a production-tail estimate. Results concern speed, not answer quality."
+  },
+  "environment": {
+    "label": "tuned-seqs1",
+    "cpu_model": "Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz",
+    "server_pod_uid": "31734bc6-5605-4fb7-afd0-cbde900fdab7",
+    "server_image": "ml-inference-service:0.1",
+    "server_image_id": "sha256:539ebb50c84ff219dc81bf2daec3156e8c7a53584de620533ef45c73eec0e98f",
+    "resources": {
+      "limits": {
+        "cpu": "3",
+        "memory": "7Gi"
+      },
+      "requests": {
+        "cpu": "2",
+        "memory": "4Gi"
+      }
+    },
+    "before": {
+      "uid": 10001,
+      "config": {
+        "model_path": "/models/qwen-0.5b",
+        "served_name": "learning-model",
+        "host": "0.0.0.0",
+        "port": 8000,
+        "dtype": "float32",
+        "max_model_len": 1024,
+        "max_num_seqs": 1,
+        "max_num_batched_tokens": 1024
+      },
+      "thread_environment": {
+        "OMP_NUM_THREADS": "2",
+        "VLLM_CPU_OMP_THREADS_BIND": "nobind",
+        "VLLM_CPU_KVCACHE_SPACE": "1"
+      },
+      "cgroup": {
+        "cpu.max": "300000 100000",
+        "cpu.stat": "usage_usec 288535720\nuser_usec 262063439\nsystem_usec 26472281\nnice_usec 0\nnr_periods 3884\nnr_throttled 1\nthrottled_usec 886\nnr_bursts 0\nburst_usec 0",
+        "memory.current": "6842486784",
+        "memory.peak": "6940508160",
+        "memory.max": "7516192768"
+      }
+    },
+    "after": {
+      "uid": 10001,
+      "config": {
+        "model_path": "/models/qwen-0.5b",
+        "served_name": "learning-model",
+        "host": "0.0.0.0",
+        "port": 8000,
+        "dtype": "float32",
+        "max_model_len": 1024,
+        "max_num_seqs": 1,
+        "max_num_batched_tokens": 1024
+      },
+      "thread_environment": {
+        "OMP_NUM_THREADS": "2",
+        "VLLM_CPU_OMP_THREADS_BIND": "nobind",
+        "VLLM_CPU_KVCACHE_SPACE": "1"
+      },
+      "cgroup": {
+        "cpu.max": "300000 100000",
+        "cpu.stat": "usage_usec 1280170838\nuser_usec 1154348699\nsystem_usec 125822138\nnice_usec 0\nnr_periods 7452\nnr_throttled 816\nthrottled_usec 1016207\nnr_bursts 0\nburst_usec 0",
+        "memory.current": "6799642624",
+        "memory.peak": "6940508160",
+        "memory.max": "7516192768"
+      }
+    },
+    "client_resources": {
+      "limits": {
+        "cpu": "1",
+        "memory": "256Mi"
+      },
+      "requests": {
+        "cpu": "100m",
+        "memory": "64Mi"
+      }
+    },
+    "client_cgroup_before": {
+      "cpu.max": "100000 100000",
+      "cpu.stat": "usage_usec 6294370\nuser_usec 5870749\nsystem_usec 423621\nnice_usec 0\nnr_periods 591\nnr_throttled 2\nthrottled_usec 68235\nnr_bursts 0\nburst_usec 0",
+      "memory.current": "16605184",
+      "memory.peak": "65011712",
+      "memory.max": "268435456",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+    },
+    "client_cgroup_after": {
+      "cpu.max": "100000 100000",
+      "cpu.stat": "usage_usec 12276831\nuser_usec 11448822\nsystem_usec 828009\nnice_usec 0\nnr_periods 1287\nnr_throttled 7\nthrottled_usec 204919\nnr_bursts 0\nburst_usec 0",
+      "memory.current": "16523264",
+      "memory.peak": "68857856",
+      "memory.max": "268435456",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+    },
+    "network_policies": [
+      "model-offline"
+    ],
+    "saved_at_utc": "2026-10-28T09:28:47.192862+00:00"
+  },
+  "client_exit_code": 0
+}

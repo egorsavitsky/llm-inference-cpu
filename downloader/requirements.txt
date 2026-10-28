@@ -1,0 +1,2 @@
+# No third-party Python dependencies. Uses only Python 3.12 standard library.
+# Interpreter and system libraries are fixed by the base-image digest.

@@ -1,0 +1,63 @@
+{
+  "checked_at_utc": "2026-10-28T10:10:32.531775+00:00",
+  "unit_tests": {
+    "status": "passed",
+    "count": 60
+  },
+  "kustomize_server_dry_run": "passed",
+  "runtime": {
+    "uid": 10001,
+    "vllm_version": "0.27.0+cpu",
+    "torch_version": "2.13.0+cpu",
+    "config": {
+      "model_path": "/models/qwen-0.5b",
+      "served_name": "learning-model",
+      "host": "0.0.0.0",
+      "port": 8000,
+      "dtype": "float32",
+      "max_model_len": 1024,
+      "max_num_seqs": 2,
+      "max_num_batched_tokens": 1024
+    },
+    "runtime_source_hashes": {
+      "requirements.txt": "e806c7b61cbe634361119f2432b5dc177a0eb13e43278b528d438acbfba31db5",
+      "config/logging.json": "d64c84b743f85092eb3e5114dece80136bc845f69e7b2ad4bab5987ecf5938ad",
+      "service/__init__.py": "45f866727f4cb63e64895c31f997eb0e2e0efa373551fece6f3f9ea633f902f8",
+      "service/events.py": "562aabe42933cbed4e3032b51d3781c9da8e1828a56871ff7fa00f10a6a0a3d2",
+      "service/launch.py": "b5a0de8da2fbb536ea2685dc40d5f8af2c6e84a78313e7ecd9c67bd8be632bc9",
+      "service/middleware.py": "bf6eb81f9666c7e9e458c1a99ef078f02ff3a26187a72b791a73d785ec849d7b"
+    }
+  },
+  "dependency_lock": {
+    "event": "dependency_lock_verified",
+    "packages": 155
+  },
+  "server_pod_uid": "85f44ce5-83c9-4011-973b-359a28c82581",
+  "server_restarts": 0,
+  "pvc_uid": "fa5e26da-719a-42fe-8797-ab8a3ac9f6cc",
+  "client_control_reachable": true,
+  "server_egress_blocked": true,
+  "statuses": {
+    "no_key": 401,
+    "wrong_key": 401,
+    "models": 200,
+    "unknown_path": 404,
+    "invalid_json": 400,
+    "invalid_messages": 400,
+    "unknown_model": 404,
+    "completion": 200,
+    "stream": 200
+  },
+  "completion_tokens": 10,
+  "stream_tokens": 8,
+  "request_event_pairs": 9,
+  "log_status_counts": {
+    "401": 2,
+    "200": 3,
+    "404": 2,
+    "400": 2
+  },
+  "prompt_output_key_probes_absent": true,
+  "log_event_schema_verified": true,
+  "scope": "Real final source/runtime consistency, API, streaming, private logs and enforced egress checks. Fresh download and Pod recreation have separate preserved evidence."
+}

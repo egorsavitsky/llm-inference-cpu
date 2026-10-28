@@ -1,0 +1,50 @@
+{
+  "checked_at_utc": "2026-10-28T09:22:08.177419+00:00",
+  "before": {
+    "model_path": "/models/qwen-0.5b",
+    "served_name": "learning-model",
+    "host": "0.0.0.0",
+    "port": 8000,
+    "dtype": "float32",
+    "max_model_len": 1024,
+    "max_num_seqs": 2,
+    "max_num_batched_tokens": 1024
+  },
+  "after": {
+    "model_path": "/models/qwen-0.5b",
+    "served_name": "learning-model",
+    "host": "0.0.0.0",
+    "port": 8000,
+    "dtype": "float32",
+    "max_model_len": 1024,
+    "max_num_seqs": 1,
+    "max_num_batched_tokens": 1024
+  },
+  "old_pod_uid": "505c13b9-8ba5-4e5a-b98b-87ffb9ab79c8",
+  "new_pod_uid": "31734bc6-5605-4fb7-afd0-cbde900fdab7",
+  "pvc_uid": "fa5e26da-719a-42fe-8797-ab8a3ac9f6cc",
+  "same_pvc": true,
+  "same_image": true,
+  "same_egress_policy": true,
+  "egress_control": "blocked",
+  "init_events": [
+    {
+      "event": "model_cache_verified",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+    }
+  ],
+  "answer": {
+    "http_status": 200,
+    "unauthorized_statuses": [
+      401,
+      401
+    ],
+    "usage": {
+      "prompt_tokens": 36,
+      "total_tokens": 44,
+      "completion_tokens": 8,
+      "prompt_tokens_details": null
+    },
+    "nonempty_answer": true
+  }
+}
